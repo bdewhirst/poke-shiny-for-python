@@ -12,3 +12,10 @@ with a python environment that has shiny installed, run the following at the CLI
 
 main.py is set up to run the second listed command-- as-is, it isn't re-entrant.
 (For now, stop and restart PyCharm. Later, refresh on shiny and/or learn the python versions of those commands in the pyshiny framework.)
+
+
+Interim workaround to stop shiny:
+(in powershell)
+`Get-Process -Name "shiny"`
+(note the process ID)
+`taskkill /F /PID (process ID number here)`
